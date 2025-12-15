@@ -1,19 +1,8 @@
 
 :root {
     /* Light Mode */
-    --bg-color: #6b7c94;
-    --text-color: #1f2123;
-
-    /* Accent Colors */
-    --accent-color-light: #d2cff5;
-    --accent-color-medium: #684fb5;
-    --accent-color-dark: #482f95;
-    --accent-color-darkest: #231942;
-    --accent-color-green: #28eb76;
-
-    /* Error Colors */
-    --error-color: #f8bbd0;
-    --error-color-border: #e63946;
+    --bg-color: #c0c7d2;
+    --text-color: #000000;
 }
 
 .highlight-lynch { color: #6b7c94; }
@@ -69,6 +58,8 @@ body {
     text-decoration: none;     /* remove underline */
     color: #0b2b4b;            /* same as .highlight-lynch */
     font-family: 'Heuristica'; /* optional: match your existing style */
+    font-size: 1.05rem;
+    font-weight: 700;
 }
 
 
@@ -117,7 +108,7 @@ figcaption {
 .button-wrapper {
     display: flex;           /* use flex layout */
     justify-content: center; /* center the buttons horizontally */
-    gap: 10px;               /* space between the buttons */
+    gap: 7px;               /* space between the buttons */
     font-size: 14px;
     margin-bottom: 20px;
 }
@@ -147,9 +138,10 @@ figcaption {
 }
 
 .experience-date {
-    color: #3b4d4e;; /* highlight-lynch */
-    font-size: 0.95rem;
+    color: #000000;; /* highlight-lynch */
+    font-size: 1rem;
     text-align: left;
+    font-weight: 600;
 }
 
 .experience-role {
@@ -171,6 +163,7 @@ figcaption {
     margin-top: 2rem;
     margin-bottom: 0.8rem;
     text-align: center;
+    font-weight: 700;
 }
 
 /* Indents everything under each title */
@@ -182,20 +175,6 @@ figcaption {
 .paper-links a {
     color: #1a4b87;
     text-decoration: none; /* remove underline */
-}
-
-.paper-links a:hover {
-    text-decoration: underline; /* optional hover effect */
-}
-
-
-.name-gif {
-    width: 30px !important;       /* adjust size */
-    height: auto !important;      /* maintain aspect ratio */
-    border: none !important;      /* remove border */
-    border-radius: 0 !important;  /* remove any circle rounding */
-    outline: none !important;
-    vertical-align: middle;       /* align with text */
-    margin-left: 5px;
-    display: inline-block;
+    font-weight: 600;
+    
 }
