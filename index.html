@@ -1,13 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <!-- head
 
-        Purpose:
-        - Title used here shows up in the browser tab
-        - Link to the favicon (small image that appears in the browser tab)
-        - Link to the CSS file (used to style the webpage)
-        -->
         <link rel="stylesheet" href="styles.css">
         <title>Ariana's Website</title>
         <!-- webpage icon -->
@@ -18,182 +12,157 @@
     <body>
         <div class="page-wrapper">
             <div class="container">
-                <!-- navbar
 
-                Purpose:
-                - Navigation bar that allows users to jump to different sections of the webpage
-                - Also holds buttons for user settings (dark mode, reduce motion)
+                <figure>
+                    <img class= "circle-img"
+                        src= "img/Stacked Up Summit - 13617.JPG"  
+                        alt= "">
+                </figure>
 
-                When To Modify:
-                - [ ] Project 4 (REQUIRED FEATURE)
-                - [ ] Project 5 (REQUIRED FEATURE) 
-                - [ ] Project 8 (STRETCH FEATURE) 
-                - [ ] Any time between / after
-                -->
-                <div class="navbar">
-                    <ul>
-                    <li><a href="#about me">Link 1</a></li>
-                    <li><a href="#projects and involvements">Link 2</a></li>
-                    <li><a href="#personal interests">Link 3</a></li>
-                    <li><a href="#bottom">Link 4</a></li>
-                    </ul>
-                </div>                 
-
-                <!-- headings
-                Purpose:
-                - Main header section of the webpage
-                - Contains the title, subtitle, image, and key buttons for the webpage
-                -->
-                <div class="top-tabs">
-                    <button class="tab-button active" data-tab="home">Home</button>
-                    <button class="tab-button" data-tab="contact">Contact</button>
+                <div id="main-title-wrapper">
+                    <h1 id="main-title">
+                        <span class="highlight-black">
+                            Ariana Camille Smith
+                        </span>
+                    </h1>
                 </div>
-
-                <h1 id="main-title">
-                    <span class="highlight-black">Ariana's Portfolio</span>
-                </h1>
-
                 <!-- Tab content sections -->
                 <div id="home" class="tab-content" style="display: block;"></div>
                 <div id="contact" class="tab-content"></div>
 
-                <h3 id="internet">Welcome to My Personal Webpage :3</h3>
-
                 <div class="button-wrapper">
-                    <button type="button">Connect with me!</button>
-                    <button type="button">View my resume!</button>
+                    <a href="mailto:masmith@ucdavis.edu" class="link-button" id="copy-email">Email</a> 
+                    <a href="https://drive.google.com/file/d/12IGuPlLd0xgsuN_tG5pY11DpCgdH6T4t/view?usp=sharing" class="link-button" target="_blank">Resume</a>
+                    <a href="https://www.linkedin.com/in/ariana-c-smith/" class="link-button" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/arriacs" class="link-button" target="_blank">Github</a> 
                 </div>
 
-                <!-- about
-                Purpose:
-                - Section for general info about the event
-                -->
-                <h2>
-                    <span class="highlight-black">2025 Digital Showcase</span>
-                </h2>
-                <p>
-                    This site provides a small introduction to my academic and personal endeavors,<br>
-                    as well as a comfy space for me to document personal achievements! (gif here)
-                </p>
 
-                <!-- schedule
-                Purpose:
-                - Section for specific info about the event's schedule
-                --> 
-                <figure>
-                    <img src="img/Stacked Up Summit - 13617.JPG" style="max-width: 300px; height: auto;" alt="">
-                    <figcaption>2025 ColorStack Stacked Up Summit Headshot</figcaption>
-                </figure>
 
-                <h2 id="about-me">
-                    <span class="highlight-black">About Me</span>
-                </h2>
-                <p>
-                    Hi! I'm Ariana Smith, a 4th year undergraduate double majoring in Computer Science and<br>
-                    Statistics at the University of California, Davis. I'm currently looking for SWE and Data<br>
+                <p, style="font-family: 'Heuristica'; font-size: 15px;">
+                    Hi! I'm Ariana Smith, a 4th year undergraduate double majoring in Computer Science and
+                    Statistics at the University of California, Davis. I'm currently looking for SWE and Data
                     Analyst internship and full-time opportunities.
-                </p>
 
-                <figure>
-                    <img src="img/UCD_Watertower.jpg" style="max-width: 300px; height: auto;" alt="">
-                    <figcaption>UC Davis Water Tower</figcaption>
-                </figure>
+<div class="projects-container">
 
-                <h3>
-                    <span class="highlight-black">Why CS & Stats?</span>
-                    </h3>
-                <p>
-                    Initially, I started my journey into the technical field as an undeclared, unaware freshman.<br>
-                    After completing ECS 32A, my first coding course, I realized a growing passion for the<br>
-                    technical and logical expression that CS had to offer. Throughout the next two years...
-                </p>
+    <!-- Current Projects -->
+    <div class="projects-section">
+        <div class="projects-title">Current Projects </div>
 
-                <figure>
-                    <img src="img/sunrise.jpg" style="max-width: 300px; height: auto;" alt="">
-                    <figcaption>Arboretum Sunrise</figcaption>
-                </figure>
+        <!-- Postura -->
+        <div class="experience">
+            <div class="experience-header">
+                <span class="experience-title">Postura</span>
+                <span class="experience-date">2025–Present</span>
+            </div>
+            <div class="experience-role">Lead Data Scientist</div>
+            <p class="experience-description">
+                Built a complete posture-classification pipeline using an Arduino-based sensor seat pad, focusing on unbiased data collection and reproducible experiments. Collected and processed over 50,000 sensor readings from controlled 10-minute trials across diverse participants, applying standardized preprocessing in Excel and Python. Conducted exploratory data analysis, feature engineering, and 5-fold stratified cross-validation with an XGBoost model, achieving 96.3% mean F1 on validation and 97% test accuracy. Deployed the model in real time with Streamlit, enabling live posture inference, interactive visualization, and direct integration with Arduino sensor data.
+            </p>
 
-                <h3>
-                    <span class="highlight-black">Projects & Involvements</span>
-                </h3>
-                <p>
-                    Since coming to Davis, I've continued to further my understanding of the path I'd like to continue in the future through many personal projects and school endeavours. These include:
-                </p>
-
-                <ul>
-                    <li>Professor Assisted Research
-                        <ul>
-                            <li><b>Bayesian Statistics Research</b> [2025-]</li>
-                            <li><b>Applied Machine Learning Research</b> [2024-2025]</li>
-                        </ul>
-                    </li>
-                    <li>Internship and Startup Experience
-                        <ul>
-                            <li><b>Leidos Data Science Internship</b> [2026]</li>
-                            <li><b>Postura Data Science Lead</b> [2025-]</li>
-                        </ul>
-                    </li>
-                    <li>Personal Projects and Club Membership
-                        <ul>
-                            <li><b>ColorStack Newsletter Editor</b> [2025-]</li>
-                            <li><b>DDSC Club Project Associate</b> [2025]</li>
-                        </ul>
-                    </li>
-                </ul>
-
-                <!-- rsvp
-
-                Purpose:
-                - Section for users to sign up for the event
-                - Contains a form for users to input their information, 
-                and a list of other users who have signed up
-
-                When To Modify:
-                - [ ] Project 6 (REQUIRED FEATURE) 
-                - [ ] Project 6 (STRETCH FEATURE) 
-                - [ ] Any time after
-                --> 
-                <div id="rsvp">
-                    <h2>RSVP</h2>
-                    <div class="rsvp-container">
-                        <div class="rsvp-para">
-                            <!-- info goes here -->
-                        </div>
-                        <div class="rsvp-participants">
-                            <p>🎟️ DJ from Texas has RSVP'd.</p>
-                            <p>🎟️ Amy from New York has RSVP'd.</p>
-                            <p>🎟️ Teresa from Montana has RSVP'd.</p>
-                        </div>
-                    </div>
-
-                    <!--- Sign RSVP Form --->
-                    <div class="form-container">
-                        <form id="rsvp-form" title="rsvp-form">
-                            <!-- form inputs go here -->
-                        </form>
-                        <!-- Submit button -->
-                        <button id="rsvp-button">Submit RSVP</button>
-                    </div>      
-                </div>
-                <!-- success modal [PLACEHOLDER] [ADDED IN UNIT 9] -->
-
-                <!-- links
-                Purpose:
-                - Links to other resources related to the event
-                --> 
-                <h2>Links</h2>
-
-                <a class="block" href="https://www.codepath.org">
-                    <article>
-                        <h3>Link title</h3>
-                        <p>Link description</p>
-                    </article>
-                </a>
-
-                <!-- footer [PLACEHOLDER] [ADDED IN UNIT 3] -->
-                <!-- script [PLACEHOLDER] [ADDED IN UNIT 5] -->
-
+            <div class="highlight-lynch paper-links">
+                <a href="https://posturahealth.net/index.html">Website</a> /  
+                <a href="https://github.com/arriacs/Postura-ML/tree/main">Code</a>
             </div>
         </div>
+
+        <!-- Global Carbon Emissions -->
+        <div class="experience">
+            <div class="experience-header">
+                <span class="experience-title">Global Carbon Emissions Data Analysis</span>
+                <span class="experience-date">2025</span>
+            </div>
+            <div class="experience-role">Project Member</div>
+            <p class="experience-description">
+                Explored the historical, geographical, and economic causes and drivers of global carbon emissions utilizing fuel emission data.
+            </p>
+            <div class="highlight-lynch paper-links">
+                <a href="https://drive.google.com/file/d/1zkYFJK8Au5VwUoZnimwfYyM0g5bvcQRf/view?usp=sharing">Report</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Past Projects -->
+    <div class="projects-section">
+        <div class="projects-title">Past Projects</div>
+
+        <!-- Applied Machine Learning Research -->
+        <div class="experience">
+            <div class="experience-header">
+                <span class="experience-title">Applied Machine Learning Research</span>
+                <span class="experience-date">2024–2025</span>
+            </div>
+            <div class="experience-role">Undergraduate Researcher</div>
+            <p class="experience-description">
+                Co-created <em>RobustBiasBench</em>, an 18,000+ point dataset for detecting bias in government excerpts and texts. Conducted benchmarks on multiple large language models, including DeepSeek-7B-Chat and Llama-3-8B-Instruct. Co-authored the paper "<em>RobustBiasBench: A Benchmark for Bias Detection Under Perturbations in Language Models</em>," submitted to the NeurIPS 2025 Datasets and Benchmarks Track.
+            </p>
+
+            <div class="highlight-lynch paper-links">
+                <a href="https://huggingface.co/datasets/bsakash/RobustBiasBench/tree/main">Dataset</a> / 
+                <a href="https://drive.google.com/file/d/1scS2RyFkt3NAxmcVEqQFsqQYxA4LzK8-/view?usp=sharing">Paper</a> /  
+                <a href="https://github.com/saeenppatil/RobustBiasBench/tree/main">Code</a>
+            </div>
+        </div>
+
+        <!-- Diabetes Risk Predictor -->
+        <div class="experience">
+            <div class="experience-header">
+                <span class="experience-title">Diabetes Risk Predictor</span>
+                <span class="experience-date">2025</span>
+            </div>
+            <div class="experience-role">Developer</div>
+            <p class="experience-description">
+                Explored the intersection of AI and healthcare by developing a predictive model for diabetes risk using machine learning techniques.
+            </p>
+            <div class="highlight-lynch paper-links">
+                <a href="https://github.com/LJMurphyy/diabetes-risk-predictor">Code</a>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- Future Projects -->
+<div class="projects-section">
+    <div class="projects-title">Future Projects</div>
+
+    <!-- Bayesian Statistics Research -->
+    <div class="experience">
+        <div class="experience-header">
+            <span class="experience-title">Bayesian Statistics Research</span>
+            <span class="experience-date">2025–2026</span>
+        </div>
+        <div class="experience-role">Undergraduate Researcher</div>
+        <p class="experience-description">
+            I will be working with Dr. Jairo Fuquene Patino, studying the applications of Bayesian
+            statistics within the social sciences.
+        </p>
+    </div>
+
+    <!-- Leidos Data Science Intern -->
+    <div class="experience">
+        <div class="experience-header">
+            <span class="experience-title">Leidos Data Science Internship</span>
+            <span class="experience-date">2025–2026</span>
+        </div>
+        <div class="experience-role">Data Scientist Intern</div>
+        <p class="experience-description">
+            I will be joining defense company Leidos this summer as a data science intern.
+        </p>
+    </div>
+
+</div>
+
+<figure>
+    <img src="img/sunrise.jpg" style="max-width: 300px; height: auto;" alt="">
+    <figcaption>Arboretum Sunrise</figcaption>
+</figure>
+
+</div>
+    <script src="index.js"></script>
     </body>
 </html>

@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "gif",
+			"path": "../../OneDrive/Ariana's Portfolio/gif"
+		},
+		{
+			"name": "Ariana-s-Portfolio",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Ariana-s-Portfolio"
+	}
+}
