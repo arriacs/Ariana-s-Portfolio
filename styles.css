@@ -157,8 +157,18 @@ figcaption {
     text-align: left;
 }
 
-/* Section titles */
+/* Section titles - Experience */
 .projects-title {
+    font-size: 1.4rem;
+    margin-top: 2rem;
+    margin-bottom: 0.8rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+
+/* Section titles - Projects */
+.experience-title {
     font-size: 1.4rem;
     margin-top: 2rem;
     margin-bottom: 0.8rem;
