@@ -1,8 +1,8 @@
-
 :root {
     /* Light Mode */
     --bg-color: #c0c7d2;
     --text-color: #000000;
+    --dark-gray: rgb(31, 33, 35);
 }
 
 .highlight-lynch { color: #6b7c94; }
@@ -11,7 +11,6 @@
 .highlight-brown { color: #2d2e2f; }
 .highlight-shark { color: #1f2123; }
 .highlight-black { color: #000000; }
-
 
 /* font */
 @font-face {
@@ -22,106 +21,138 @@
     font-style: normal;
 }
 
-html, body {
-    height: 100%;        /* ensure the body fills the viewport */
-    margin: 0;           /* remove default body margin */
-    padding: 0;          /* remove default body padding */
+#main-title,
+.welcome,
+.section-title,
+.paper-links,
+.link-button {
+    font-family: 'Heuristica';
 }
 
-html {
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
     background-color: var(--bg-color);
 }
 
-
 body {
-    /* Add a background color or image */
-    background-color: var(--bg-color); /* see bottom of file for color variables */
-
-    /* Customize the default size, color, and font for text*/
     font-size: 16px;
     color: var(--text-color);
-    font-family: Tahoma, sans-serif; /* This tells the browser: "Try to use `Tahoma`, and if you can't find it, use any sans-serif font." */
-
-    /* Put space around the edges of the webpage */
+    font-family: Tahoma, sans-serif;
     text-align: center;
 }
 
-
-/*** Full-page wrapper for side borders ***/
+/*** Page wrapper and container ***/
 .page-wrapper {
-    background-color: rgb(31, 33, 35); /* darker purple for the sides */
-    padding: 0;                /* no extra space needed */
-    box-sizing: border-box; 
+    background-color: var(--dark-gray);
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding: 20px 13%;
+    background-color: var(--bg-color);
+    box-sizing: border-box;
+    border: 20px solid var(--dark-gray);
+    border-radius: 40px;
 }
 
 .link-button {
-    text-decoration: none;     /* remove underline */
-    color: #0b2b4b;            /* same as .highlight-lynch */
-    font-family: 'Heuristica'; /* optional: match your existing style */
+    text-decoration: none;
+    color: #0b2b4b;
     font-size: 1.05rem;
     font-weight: 700;
 }
 
-
-/*** Container & Lists Styling ***/
-
-.container {
-    max-width: 1300px;
-    
-    padding: 20px 18%;
-    background-color: var(--bg-color); /* lighter purple */
-    box-sizing: border-box;
-    border: 20px solid rgb(31, 33, 35); /* small border around entire page */
-    border-radius: 40px;
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 7px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    position: relative;
 }
 
-.projects-container p {
-    text-align: left;
-}
-
-/* images */
-
+/*** Images and gifs ***/
 .container img {
     display: block;
     margin: 0 auto;
     border: 7px solid #3b4d4e;
-    border-radius: 30px; /* slightly rounded corners */
+    border-radius: 30px;
     width: 300px;
     height: 100px;
 }
 
 .container img.circle-img {
-    width: 300px;
     height: 300px;
     object-fit: cover;
     border-radius: 50%;
 }
 
 figcaption {
-    font-size: 13px;   /* adjust the size as needed */
-    text-align: center; /* optional: center the caption */
-    color: #1f2123;    /* optional: change the color if desired */
+    font-size: 13px;
+    text-align: center;
+    color: #1f2123;
     margin-top: 7px;
     margin-bottom: 30px;
-  }
-
-.button-wrapper {
-    display: flex;           /* use flex layout */
-    justify-content: center; /* center the buttons horizontally */
-    gap: 7px;               /* space between the buttons */
-    font-size: 14px;
-    margin-bottom: 20px;
 }
 
-/* projects */
+.images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .gifs img {
+    border: none;
+    border-radius: 0;
+    width: 80px;
+    height: 30px;
+    object-fit: cover;
+    object-position: bottom;
+    margin-left: 20px;
+}
+
+.gifs {
+    position: absolute;
+    left: 50%;
+    margin-left: 150px;
+    bottom: 0;
+}
+
+/*** Experience and projects ***/
 .projects-container {
-    max-width: 700px;
-    text-align: left;
+    text-align: center;
     margin-right: auto;
 }
 
+.projects-container p {
+    text-align: left;
+}
+
+.projects-section {
+    margin-bottom: 1.6rem;
+}
+
+/* Section headings (Experience, Projects) */
+.section-title {
+    font-size: 1.4rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+.experience-section .section-title {
+    font-size: 1.2rem;
+}
+
+/* Individual entries */
 .experience {
-    margin-bottom: 1.5rem;
+    margin-bottom: 3rem;
     text-align: left;
 }
 
@@ -129,62 +160,32 @@ figcaption {
     display: flex;
     justify-content: space-between;
     font-weight: 600;
-    text-align: left;
 }
 
 .experience-title {
-    font-size: 1rem;
-    text-align: left;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 0;
+    text-align: center;
 }
 
 .experience-date {
-    color: #000000;; /* highlight-lynch */
+    color: #000000;
     font-size: 1rem;
-    text-align: left;
-    font-weight: 600;
 }
 
 .experience-role {
     margin: 0.2rem 0;
     font-style: italic;
-    font-style: italic;
-    text-align: left;
 }
 
 .experience-description {
     margin: 0.4rem 0 0;
     line-height: 1.4;
-    text-align: left;
-}
-
-/* Section titles - Experience */
-.projects-title {
-    font-size: 1.4rem;
-    margin-top: 2rem;
-    margin-bottom: 0.8rem;
-    text-align: center;
-    font-weight: 700;
-}
-
-
-/* Section titles - Projects */
-.experience-title {
-    font-size: 1.4rem;
-    margin-top: 2rem;
-    margin-bottom: 0.8rem;
-    text-align: center;
-    font-weight: 700;
-}
-
-/* Indents everything under each title */
-.projects-section {
-    padding-left: 1.4rem;
-    margin-bottom: 1.6rem;
 }
 
 .paper-links a {
     color: #1a4b87;
-    text-decoration: none; /* remove underline */
+    text-decoration: none;
     font-weight: 600;
-    
 }

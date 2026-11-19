@@ -1,0 +1,12 @@
+# ignore the gif anf img folders except for the specified imagery and gifs
+
+gif/*
+!gif/annoying_dog1.gif
+!gif/annoying_dog2.gif
+
+img/*
+!img/sunrise.jpg
+!img/Stacked Up Summit - 13617.JPG
+!img/heart.png
+!img/Water_Tower_UCD.jpg
+!img/Sheep_UCD.jpg

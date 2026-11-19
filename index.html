@@ -32,76 +32,69 @@
 
                 <div class="button-wrapper">
                     <a href="mailto:masmith@ucdavis.edu" class="link-button" id="copy-email">Email /</a> 
-                    <a href="https://drive.google.com/file/d/12IGuPlLd0xgsuN_tG5pY11DpCgdH6T4t/view?usp=sharing" class="link-button" target="_blank">Resume /</a>
+                    <a href="https://drive.google.com/file/d/1ncL4KkSPkveuPBeP9X1h0yj8snlHzrgM/view?usp=sharing" class="link-button" target="_blank">Resume /</a>
                     <a href="https://www.linkedin.com/in/ariana-c-smith/" class="link-button" target="_blank">LinkedIn /</a>
                     <a href="https://github.com/arriacs" class="link-button" target="_blank">Github</a> 
+
+                    <div class="gifs">
+                        <img src="gif/annoying_dog1.gif" alt="Annoying Dog">
+                    </div>
                 </div>
 
 
-
 <p style="font-size: 15px;">
-   <strong style="font-family: 'Heuristica';"> Welcome!</strong>  I’m Ariana Smith, an incoming Masters student for the Big Data Analytics program at San Diego State University. I recently completed my Bachelor's in Computer Science and Statistics minor at UC Davis.
-    This summer, I am interning for Leidos as a Software Development Intern under <a href="https://www.jairofuquene.com" class="link-button" target="_blank">Scot Shiflett</a>.
-    <!-- I am currently a member of the startup Postura, where I collect live posture data to train large language models for real-time applications. -->
-    I also conducted research under  <a href="https://www.jairofuquene.com" class="link-button" target="_blank">Dr. Jairo Fuquene Patino</a>, applying Bayesian methods to problems in the social sciences. 
-    My interests focus on using my computational and statistical background to tackle real-world problems in unfamiliar domains and expand my expertise.
+   <strong style="font-family: 'Heuristica';"> Welcome!</strong> 
+   
+        I’m Ariana Smith, a Masters student for the Big Data Analytics program at San Diego State University. 
+        I recently completed my Bachelor's in Computer Science and Statistics minor at UC Davis.
+        After a successful summer internship under <a href="https://www.leidos.com" class="link-button" target="_blank">Scot Shiflett</a>, 
+        I am now working part time as a Software Developer Intern for Leidos.
+
+        My interests focus on using my computational and statistical background to tackle real-world problems in unfamiliar domains and expand my expertise.
 </p>
 
 <div class="experience-container">
 
     <!-- Experience -->
     <div class="experience-section">
-        <div class="experience-title" style="font-family: 'Heuristica';">Experience</div>
+        <div class="section-title" style="font-family: 'Heuristica';">Experience</div>
 
         <!-- Leidos Software Development Internship -->
         <div class="experience">
             <div class="experience-header">
                 <span class="experience-title">Leidos</span>
-                <span class="experience-date">June 2026–Present</span>
+                <span class="experience-date">June 2026 – Present</span>
             </div>
             <div class="experience-role">Software Development Intern</div>
             <p class="experience-description">
-                Built a complete posture-classification pipeline using an Arduino-based sensor seat pad, focusing on unbiased data collection and reproducible experiments. 
-                Collected and processed sensor readings from controlled trials across diverse participants, applying standardized preprocessing in Excel and Python. 
-                Conducted exploratory data analysis, feature engineering, and stratified cross-validation with an XGBoost model, achieving high validation and test performance. 
-                Deployed the model in real time with Streamlit, enabling live posture inference, interactive visualization, and direct integration with Arduino sensor data.
+                Built an automated geospatial QC platform for vertical obstruction databases, enabling scalable height verification
+                from commercial satellite imagery; replaced manual per-feature height checks and reduced analyst review time on
+                flagged discrepancies, as demonstrated through validation testing on 90,000+ points.
+
+                Developed photogrammetric height estimation from shadow and off-nadir lean geometry, utilizing solar metadata
+                and DEM terrain correction for accurate measurement over uneven terrain.
+
+                Integrated DINOv2 deep-learning segmentation, traditional image classification, and prompt-engineered Nano Banana Pro 
+                workflows to pinpoint object-base and shadow-tip coordinates, improving obstruction height estimation
+                where initial shadow-contrast height measurements were labeled as inconclusive.
+
+                Designed an optimal imagery selection pipeline that filters GEGD Pro imagery archives based on sensor, cloud
+                cover and sun geometry requirements, ranks candidates for ideal shadow visibility, and streams tiles into parallel,
+                resumable processing to cut acquisition and run time.
+
+                Built a PySide6 (Qt) analyst workstation with 2D and 3D (VTK) terrain-draped views that support interactive
+                height mensuration and keyboard-driven adjudication, enabling immersive height visualization before exporting
+                results to shapefile and CSV.
+
             </p>
 
-            <div class="highlight-lynch paper-links" style="font-family: 'Heuristica';">
-                <a href="https://posturahealth.net/index.html">Website /</a> 
-                <a href="https://github.com/arriacs/Postura-ML/tree/main">Code</a>
-            </div>
         </div>
-
-            <!-- Bayesian Statistics Research -->
-        <div class="experience">
-            <div class="experience-header">
-                <span class="experience-title">Bayesian Statistics Research</span>
-                <span class="experience-date">Dec. 2025 – June 2026</span>
-            </div>
-            <div class="experience-role">Undergraduate Researcher</div>
-            <p class="experience-description">
-            I will be working with Dr. Jairo Fuquene Patino, studying the applications of Bayesian
-            statistics within the social sciences.
-            </p>
-            <div class="highlight-lynch paper-links" style="font-family: 'Heuristica';">
-                <a href="https://www.jairofuquene.com/students">Website</a>
-        </div>
-    </div>
-</div>
-
-
-<div class="projects-container">
-
-    <!-- Current Projects -->
-    <div class="projects-section">
-        <div class="projects-title" style="font-family: 'Heuristica';">Current Projects </div>
 
         <!-- Postura -->
         <div class="experience">
             <div class="experience-header">
                 <span class="experience-title">Postura</span>
-                <span class="experience-date">Sept. 2025–Present</span>
+                <span class="experience-date">September 2025 – June 2026</span>
             </div>
             <div class="experience-role">Lead Data Scientist</div>
             <p class="experience-description">
@@ -117,39 +110,31 @@
             </div>
         </div>
 
-        <!-- Global Carbon Emissions -->
+
+        <!-- Salvation Army Kroc Center -->
         <div class="experience">
             <div class="experience-header">
-                <span class="experience-title">Global Carbon Emissions Data Analysis</span>
-                <span class="experience-date">Sept. 2025 - Dec. 2025</span>
+                <span class="experience-title">Salvation Army Kroc Center</span>
+                <span class="experience-date">June 2025 – September 2025</span>
             </div>
-            <div class="experience-role">Project Member</div>
+            <div class="experience-role">STEM Youth Development Leader</div>
             <p class="experience-description">
-            Explored the historical, geographical, and economic drivers of global carbon emissions using fuel emission data. 
-            Conducted exploratory data analysis and applied methods such as regression, Lorenz curves, and structural break detection to identify trends and historical shifts. 
-            Examined emission inequalities among top-emitting countries and predicted which nations are likely to become leading contributors in the future. 
-            Overall, the analysis highlights how historical, technological, and economic factors shape emissions and how this understanding can guide policies for mitigation.
+                Instructed and mentored 30+ youth ages 5–14 in day camp activities including programming and robotics. 
+                Coordinated administrative operations and event logistics under tight timelines, ensuring daily program readiness.
             </p>
-            <div class="highlight-lynch paper-links" style="font-family: 'Heuristica';">
-                <a href="https://drive.google.com/file/d/1zkYFJK8Au5VwUoZnimwfYyM0g5bvcQRf/view?usp=sharing">Report</a>
-            </div>
         </div>
-
-    </div>
-
-    <!-- Past Projects -->
-    <div class="projects-section">
-        <div class="projects-title" style="font-family: 'Heuristica';">Past Projects</div>
 
         <!-- Applied Machine Learning Research -->
         <div class="experience">
             <div class="experience-header">
                 <span class="experience-title">PRISM Applied Machine Learning Research</span>
-                <span class="experience-date">Dec. 2024– Sept. 2025</span>
+                <span class="experience-date">December 2024 – September 2025</span>
             </div>
             <div class="experience-role">Undergraduate Researcher</div>
             <p class="experience-description">
-                Co-created <em>RobustBiasBench</em>, an 18,400+ point dataset for detecting bias in government excerpts and texts. Conducted benchmarks on multiple large language models, including DeepSeek-7B-Chat and Llama-3-8B-Instruct. Co-authored the paper "<em>RobustBiasBench: A Benchmark for Bias Detection Under Perturbations in Language Models</em>," submitted to the NeurIPS 2025 Datasets and Benchmarks Track.
+                Co-created <em>RobustBiasBench</em>, an 18,400+ point dataset for detecting bias in government excerpts and texts. 
+                Conducted benchmarks on multiple large language models, including DeepSeek-7B-Chat and Llama-3-8B-Instruct. 
+                Co-authored the paper "<em>RobustBiasBench: A Benchmark for Bias Detection Under Perturbations in Language Models</em>," submitted to the NeurIPS 2025 Datasets and Benchmarks Track.
             </p>
 
             <div class="highlight-lynch paper-links" style="font-family: 'Heuristica';">
@@ -159,11 +144,54 @@
             </div>
         </div>
 
+
+    </div>
+</div>
+
+
+<div class="projects-container">
+
+    <div class="projects-section">
+        <div class="section-title" style="font-family: 'Heuristica';">Projects</div>
+
+        <!-- Bayesian Statistics Research -->
+        <div class="experience">
+            <div class="experience-header">
+                <span class="experience-title">Bayesian Statistics Research</span>
+                <span class="experience-date">December 2025 – June 2026</span>
+            </div>
+            <div class="experience-role">Undergraduate Researcher</div>
+            <p class="experience-description">
+            Conducted research under  Dr. Jairo Fuquene Patino, applying Bayesian methods to problems in the social sciences. 
+            </p>
+            <div class="highlight-lynch paper-links">
+                <a href="https://www.jairofuquene.com/students">Website</a>
+            </div>
+        </div>
+
+        <!-- Global Carbon Emissions -->
+        <div class="experience">
+            <div class="experience-header">
+                <span class="experience-title">Global Carbon Emissions Data Analysis</span>
+                <span class="experience-date">September 2025 - December 2025</span>
+            </div>
+            <div class="experience-role">Project Member</div>
+            <p class="experience-description">
+                Explored the historical, geographical, and economic drivers of global carbon emissions using fuel emission data. 
+                Conducted exploratory data analysis and applied methods such as regression, Lorenz curves, and structural break detection to identify trends and historical shifts. 
+                Examined emission inequalities among top-emitting countries and predicted which nations are likely to become leading contributors in the future. 
+                Overall, the analysis highlights how historical, technological, and economic factors shape emissions and how this understanding can guide policies for mitigation.
+            </p>
+            <div class="highlight-lynch paper-links" style="font-family: 'Heuristica';">
+                <a href="https://drive.google.com/file/d/1zkYFJK8Au5VwUoZnimwfYyM0g5bvcQRf/view?usp=sharing">Report</a>
+            </div>
+        </div>
+
         <!-- Diabetes Risk Predictor -->
         <div class="experience">
             <div class="experience-header">
                 <span class="experience-title">Diabetes Risk Predictor</span>
-                <span class="experience-date">Mar. 2025 - June 2025</span>
+                <span class="experience-date">March 2025 - June 2025</span>
             </div>
             <div class="experience-role">Developer</div>
             <p class="experience-description">
@@ -175,7 +203,6 @@
             <div class="highlight-lynch paper-links" style="font-family: 'Heuristica';">
                 <a href="https://www.youtube.com/watch?v=Nlz4IadUbRw">Demo /</a>
                 <a href="https://github.com/LJMurphyy/diabetes-risk-predictor">Code</a>
-                
             </div>
         </div>
 
@@ -183,13 +210,13 @@
         <div class="experience">
             <div class="experience-header">
                 <span class="experience-title">Pose Estimation: Top Down vs. Bottom-Up Models</span>
-                <span class="experience-date">Sept. 2024 - Dec. 2024</span>
+                <span class="experience-date">September 2024 - December 2024</span>
             </div>
             <div class="experience-role">Project Member</div>
             <p class="experience-description">
-            Analyzed top-down and bottom-up pose estimation models, including MoveNet Lite and SimpleBaselines, across COCO, LSP, and MPii human activity datasets. 
-            Implemented MoveNet Lite in Python by developing functions to detect and connect 17 human skeleton keypoints and evaluated model performance across datasets. 
-            Examined differences in model accuracy and adaptability, addressing challenges in dataset-specific preprocessing and output formatting to optimize pose estimation results.
+                Analyzed top-down and bottom-up pose estimation models, including MoveNet Lite and SimpleBaselines, across COCO, LSP, and MPii human activity datasets. 
+                Implemented MoveNet Lite in Python by developing functions to detect and connect 17 human skeleton keypoints and evaluated model performance across datasets. 
+                Examined differences in model accuracy and adaptability, addressing challenges in dataset-specific preprocessing and output formatting to optimize pose estimation results.
             </p>
             <div class="highlight-lynch paper-links" style="font-family: 'Heuristica';">
                 <a href="https://drive.google.com/file/d/175owKYHVc7oSE5oF8LGUuHycg0NfPI_z/view?usp=sharing">Report</a>
@@ -200,10 +227,27 @@
 
 </div>
 
-<figure>
-    <img src="img/sunrise.jpg" style="max-width: 300px; height: auto;" alt="">
-    <figcaption>UC Davis Arboretum Sunrise</figcaption>
-</figure>
+<!-- Website Imagery -->
+
+<div class="images">
+
+    <figure>
+        <img src="img/Water_Tower_UCD.jpg" style="max-width: 300px; height: auto;" alt="">
+        <figcaption>UC Davis Water Tower</figcaption>
+    </figure>
+
+    <figure>
+        <img src="img/sunrise.jpg" style="max-width: 300px; height: auto;" alt="">
+        <figcaption>Arboretum Sunrise</figcaption>
+    </figure>
+
+
+    <figure>
+        <img src="img/Sheep_UCD.jpg" style="max-width: 300px; height: auto;" alt="">
+        <figcaption>UC Davis Sheep</figcaption>
+    </figure>
+
+</div>
 
 </div>
     <script src="index.js"></script>
